@@ -30,7 +30,7 @@ Hierna kun je het bestand uitvoeren:
 Nu gaan we zelf aan de slag met het schrijven van shellscripts. Een aantal dingen om op te letten:
 
 - Maak één script per opdracht.
-- Voor het testen van de shellscripts is een mappenstructuur beschikbaar in [deze repository](https://github.com/peikos/V1EOS-practica). je kunt deze clonen om je scripts uit te voeren, en reset deze om alles weer terug te zetten voor een volgende test. **Let op:** zet je scripts zelf niet in deze map, zodat je deze niet mee kan resetten. Het kan helpen je scripts in een `~/bin` map te zetten en deze aan je `PATH` toe te voegen.
+- Voor het testen van de shellscripts is een mappenstructuur beschikbaar. Gebruik het script `reset` alles weer terug te zetten voor een volgende test. **Let op:** zet je scripts zelf niet in deze map, anders worden deze door reset **verwijderd**.
 - Gebruik Bash. Als je een alternatieve shell gebruikt, voer dan eerst `bash` uit voordat je je script als commando gebruikt.
 - Documenteer je script: net als in Python kun je `#` gebruiken voor commentaar.
 - Deze opdrachten gaan over de stof van 2 lessen. Mocht je ergens niet uitkomen, dan ben je mogelijk vooruit aan het lopen en heb je kennis nodig die volgende les wordt behandeld.
@@ -42,24 +42,21 @@ Nu gaan we zelf aan de slag met het schrijven van shellscripts. Een aantal dinge
 Maak een shellscript `sorteerAfbeeldingen` dat een map "Afbeeldingen" aanmaakt, en alle JPEG en PNG bestanden hiernaar verplaatst. Het script wordt aangeroepen met `sorteerAfbeeldingen /pad/naar/EOS1_bestanden`. Doe dit zowel met een expliciete loop, als met behulp van `find -exec` of `find | xargs` (naar keuze).
 
 ## Opdracht 1
-Maak een shellscript `vakantieFotos` dat alle vakantie-foto's binnen "Afbeeldingen" in de submap "Vakantie" zet. Het script wordt aangeroepen met `vakantieFotos /pad/naar/EOS1_bestanden`. Gebruik hiervoor `find` en `grep`.
+Maak een shellscript `voerUit` dat afhankelijk van de extensie van een meegegeven bestand de juiste interpreter aanroept. Als de gebruiker `voerUit bestand.py` aanroept wordt binnen het shellscript `python3 bestand.py` aangeroepen. Bij `voerUit bestand.sh` wordt `bash bestand.sh` uitgevoerd. Bij `voerUit bestand.cc` wordt de code geprint met `cat bestand.cc`. Bij een ander bestandstype wordt een foutmelding geprint. Gebruik voor deze opdracht een `case` statement.
 
 ## Opdracht 2
-Maak een shellscript `telBestandtypes` dat, gegeven een lijst bestandtypes, per bestandtype vertelt hoeveel bestanden er van dit type zijn. Het script wordt bijvoorbeeld aangeroepen met `telBestandTypes /pad/naar/EOS1_bestanden pdf jpg doc`. Gebruik hiervoor een loop, `case` en variabelen.
-
-## Opdracht 3
 Installeer voor deze opdracht ImageMagick (`sudo apt install imagemagick`). Maak een shellscript `naarPNG` dat ieder JPEG bestand in de map converteert naar een PNG van maximaal 128x128 pixels. Gebruik de `man`-page om je hierbij te helpen. Het script wordt aangeroepen met `naarPNG /pad/naar/EOS1_bestanden`. HINT: het commando dat je nodig hebt heet `convert`.
 
-## Opdracht 4
-Maak een shellscript `checkStatus` dat een gegeven commando uit probeert te voeren op ieder bestand in een gegeven map. Per bestand wordt in een gegeven logbestand geschreven of het commando geslaagd is of niet. Het logbestand wordt iedere keer dat `checkStatus` gedraaid wordt opnieuw aangemaakt. Het script wordt aangeroepen met `checkStatus /pad/naar/EOS1_bestanden commando`. Gebruik hiervoor de return status en `if` / `test`.
+## Opdracht 3
+Maak een shellscript `checkStatus` dat een gegeven commando uit probeert te voeren op ieder bestand in een gegeven map. Per bestand wordt in een gegeven logbestand geschreven of het commando geslaagd is of niet. Het logbestand wordt iedere keer dat `checkStatus` gedraaid wordt opnieuw aangemaakt. Het script wordt aangeroepen met `checkStatus /pad/naar/EOS1_bestanden commando`. Gebruik hiervoor de return status en `if` / `test`. Een goede test is om je script aan te roepen met `cat`: als alles goed werkt 
 
-## Opdracht 5
+## Opdracht 4
 Maak een shellscript `maakLogin` dat:
 
-- Om je naam vraagt, en als deze niet wordt gegeven de huidige gebruikersnaam als default pakt (`whoami`);
-- een wachtwoord vraagt, en dit met een `while`-loop blijft herhalen tot tweemaal hetzelfde wachtwoord wordt ingevoerd met minstens 8 karakters, een hoofdletter, een kleine letter en een cijfer;
+- Om je naam vraagt, en als deze niet wordt gegeven de huidige gebruikersnaam als default pakt (via het commando `whoami`);
+- een wachtwoord vraagt, en dit met een `while`-loop blijft herhalen tot tweemaal hetzelfde wachtwoord wordt ingevoerd dat uit minstens 8 karakters bestaat;
 - een tekstbestand schrijft met de gebruikersnaam en een MD5-hash (`md5sum`) van het gekozen wachtwoord.
 Het script wordt aangeroepen met `maakLogin passwordfile`.
 
-## Opdracht 6
+## Opdracht 5
 Bedenk zelf een toepassing en programmeer deze in een shellscript. Let erop dat je hard-coded paden vermijdt.
