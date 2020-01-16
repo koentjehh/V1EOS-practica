@@ -9,15 +9,31 @@ Deze opdracht is individueel. Om de opdracht uit te voeren heb je een Raspberry 
 Beantwoord de vragen hieronder ("Onderweg") tijdens het uitvoeren van de opdracht, dit vormt het bewijs dat je de opdracht gedaan hebt.
 
 ## Benodigde bestanden
-Download de Linux `scavenger-hunt` van [deze GitHub](https://github.com/pushingice/scavenger-hunt) met behulp van `cd; git clone https://github.com/pushingice/scavenger-hunt.git
-cd scavenger-hunt`. Gebruik vervolgens het commando `cd scavenger-hunt` om in de zojuist gemaakte directory te komen. Van hieruit gebruik je Python om de clues te genereren. Om ervoor te zorgen dat je de juiste clues treft (en het nakijken mogelijk te maken) gebruik je 3511 als secret number: `python generate_clues.py 3511`. Je kunt nu met de eerste aanwijzing beginnen, lees hiervoor de `README.md` op GitHub.
+Gebruik het commando `cd ~/V1EOS-practica/scavenger_hunt` om in de mappen van dit practicum te komen. Van hieruit gebruik je het commando `./generate_clues.py [STUDENTNR]` om de clues te genereren. Je kunt nu met de eerste aanwijzing beginnen.
 
-## Onderweg
-Terwijl je hiermee bezig bent, beantwoord je de volgende vragen. Deze lever je in of laat je zien aan je docent.
+## Clue 1: The Hunt Begins
 
-- Met welke opties wordt het `ls` commando gebruikt in Clue 4?
-- Welk commando wordt in Clue 6 geintroduceerd, en waar wordt dit commando voor gebruikt?
-- Naar welke domeinnaam wordt in Clue 7 verwezen?
-- Welke optie heb je bij Clue 9 gebruikt om de volgende regel te vinden?
-- In Clue 10 wordt een `grep` commando gebruikt om woorden te vinden die met 4 specifieke letters beginnen. Welke letters zijn dit?
-- Welke link vind je in de laatste clue (die trouwens niet meer lijkt te bestaan)?
+#### `man` ####
+
+Het eerste commando dat we leren is `man`, kort voor manual. Als je `man [COMMAND] typt krijg je een uitgebreide hulp-pagina (meestal een manpage genoemd) voor de meeste commando's. Door op `q` te drukken kom je weer terug in de shell.
+
+#### `ls` ####
+
+Het volgende commando is `ls` (list). Type `man ls` en lees de beschrijving. Type zodra je de manpage hebt gesloten het commando `ls`; de uitvoer ziet er ongeveer zo uit:
+
+    clues generate_clues.py LICENSE.md next_clue.py README.md
+
+Blauwe items zijn mappen, al het andere is een bestand. Als je wilt weten welke mappen en bestanden er in de huidige map zitten kun je `ls` gebruiken.
+
+#### `cd` ####
+
+Voordat we op jacht gaan hebben we nog twee dingen nodig. Om naar een andere map te gaan gebruiken we `cd` (change directory). Met `cd clues` kunnen we de map met aanwijzingen ingaan. Een map terug naar boven gaat met `cd ..` en je kunt altijd terug naar de beginmap van deze scanvenger hunt met `cd ~/V1EOS-practica/scavenger_hunt`. Als je de map `clues` bent binnengegaan en `ls` typt zie je dat er een hoop clue-mappen zijn. De meeste daarvan zijn afleiders, maar een aantal bevatten daadwerkelijke hints. Gebruik `cd` om naar de map `12345` in `clues` te gaan en type `ls`. In deze map is een bestand aanwezig, genaamde `clue`.
+
+#### `cat` en `less` ####
+
+Om een clue te lezen moeten we de inhoud van een bestand kunnen lezen. Hiervoor kunnen we de commando's `cat` en `less` gebruiken. `cat clue` print de gehele inhoud van het bestand op het scherm. `less clue` opent het bestand net als een manpage: we kunnen door het bestand scrollen en `q` gebruiken om `less` te verlaten.
+
+Lees de clue en ga hier verder. Alle volgende aanwijzingen zitten in opvolgende clues verborgen. Schrijf op welke clues je gehad hebt, zodat je als je verdwaald bent terug kan gaan naar waar je wist dat je nog goed zat. Je kunt de clues ook naar een aparte map kopieren of de inhoud in een tekstbestand zetten, als je wilt. Voor het kopieren van bestanden kan je het commando `cp` gebruiken, raadpleeg de manpage als dit een goed idee lijkt. In een latere clue zullen we dit commando beter leren kennen.
+
+## Attribution
+This scavenger hunt is based on the work of [Christopher M. Retford](https://github.com/pushingice/scavenger-hunt). 
