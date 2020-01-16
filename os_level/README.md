@@ -1,9 +1,9 @@
 ---
-title: "EOS Unit 1 — OS Level Programming in C++"
+title: "EOS Practicum — OS Level Programming in C++"
 keywords: [EOS]
 ---
 
-# EOS Unit 1 — OS Level Programming in C++
+# EOS Practicum — OS Level Programming in C++
 
 Deze opdracht is individueel. De opdracht bestaat uit drie delen. Het eerste deel is het maken van een simpele utility die je als deel van een pipeline kan inzetten, bij het tweede en derde deel gebruik je system calls om een shell en een "shuffler". Je kunt de code op je normale systeem of op Linux (bijvoorbeeld in de VM) schrijven, maar voor het compileren en uitvoeren moet je sowieso Linux gebruiken. Voor het op Linux compilen van je code gebruik je `g++`, bijvoorbeeld `g++ file.cc -o file`. Als dit goed compileert kun je dit daarna starten met `./file`. Je levert je code in via een link naar een commit op GitHub. Je kunt [deze repo](https://github.com/Peikos/V1EOS-practica) als uitgangspunt gebruiken, bijvoorbeeld door een fork te maken en hierin te werken.
 
