@@ -32,8 +32,9 @@ Voordat we op jacht gaan hebben we nog twee dingen nodig. Om naar een andere map
 #### `cat` en `less` ####
 
 Om een clue te lezen moeten we de inhoud van een bestand kunnen lezen. Hiervoor kunnen we de commando's `cat` en `less` gebruiken. `cat clue` print de gehele inhoud van het bestand op het scherm. `less clue` opent het bestand net als een manpage: we kunnen door het bestand scrollen en `q` gebruiken om `less` te verlaten.
+De naam Less is afgeleid van het oudere programma More, waarbij je op `enter` moest drukken om meer te zien te krijgen. Less is More, en met met Less kan je ook terug naar boven scrollen.
 
-Lees de clue en ga hier verder. Alle volgende aanwijzingen zitten in opvolgende clues verborgen. Schrijf op welke clues je gehad hebt, zodat je als je verdwaald bent terug kan gaan naar waar je wist dat je nog goed zat. Je kunt de clues ook naar een aparte map kopieren of de inhoud in een tekstbestand zetten, als je wilt. Voor het kopieren van bestanden kan je het commando `cp` gebruiken, raadpleeg de manpage als dit een goed idee lijkt. In een latere clue zullen we dit commando beter leren kennen.
+Lees de clue en ga hier verder. Alle volgende aanwijzingen zitten in opvolgende clues verborgen. Schrijf op welke clues je gehad hebt, zodat je als je verdwaald bent terug kan gaan naar waar je wist dat je nog goed zat. Je kunt de clues ook naar een aparte map kopiëren of de inhoud in een tekstbestand zetten, als je wilt. Voor het kopiëren van bestanden kan je het commando `cp` gebruiken, raadpleeg de manpage als dit een goed idee lijkt. In een latere clue zullen we dit commando beter leren kennen.
 
 ## Attribution
 This scavenger hunt is based on the work of [Christopher M. Retford](https://github.com/pushingice/scavenger-hunt). 
