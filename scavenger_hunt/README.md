@@ -15,7 +15,7 @@ Gebruik het commando `cd ~/V1EOS-practica/scavenger_hunt` om in de mappen van di
 
 #### `man` ####
 
-Het eerste commando dat we leren is `man`, kort voor manual. Als je `man [COMMAND] typt krijg je een uitgebreide hulp-pagina (meestal een manpage genoemd) voor de meeste commando's. Door op `q` te drukken kom je weer terug in de shell.
+Het eerste commando dat we leren is `man`, kort voor manual. Als je `man [COMMAND]` typt krijg je een uitgebreide hulp-pagina (meestal een manpage genoemd) voor de meeste commando's. Door op `q` te drukken kom je weer terug in de shell.
 
 #### `ls` ####
 
