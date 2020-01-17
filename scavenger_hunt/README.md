@@ -37,4 +37,4 @@ De naam Less is afgeleid van het oudere programma More, waarbij je op `enter` mo
 Lees de clue en ga hier verder. Alle volgende aanwijzingen zitten in opvolgende clues verborgen. Schrijf op welke clues je gehad hebt, zodat je als je verdwaald bent terug kan gaan naar waar je wist dat je nog goed zat. Je kunt de clues ook naar een aparte map kopiëren of de inhoud in een tekstbestand zetten, als je wilt. Voor het kopiëren van bestanden kan je het commando `cp` gebruiken, raadpleeg de manpage als dit een goed idee lijkt. In een latere clue zullen we dit commando beter leren kennen.
 
 ## Attribution
-This scavenger hunt is based on the work of [Christopher M. Retford](https://github.com/pushingice/scavenger-hunt). 
+This scavenger hunt is based on the work of [Christopher M. Retford](https://github.com/pushingice/scavenger-hunt). Used (and propagated) under the [MIT licence](LICENCE.md).
