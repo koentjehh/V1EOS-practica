@@ -1,6 +1,6 @@
 # Scavenger Hunt is licensed under the MIT License
 
-Copyright (C) 2013 Christopher M. Retford
+Copyright (C) 2013 Christopher M. Retford, 2020 Brian van der Bijl
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
