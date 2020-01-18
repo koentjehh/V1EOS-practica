@@ -5,8 +5,7 @@ keywords: [EOS]
 
 # EOS Practicum — Linux Scavenger Hunt
 
-Deze opdracht is individueel. Om de opdracht uit te voeren heb je een Raspberry Pi of Virtual Machine (bijvoorbeeld VirtualBox) met Linux nodig. Voor een volgende opdracht wordt ook met VirtualBox gewerkt. Het beste kun je voor de scavenger hunt een versie van Debian of Ubuntu Linux gebruiken, dit om in een aantal van de clues iets te kunnen installeren. Als je al bekend bent met Linux en weet hoe dit in je eigen variant werkt, dan mag dat natuurlijk ook.
-Beantwoord de vragen hieronder ("Onderweg") tijdens het uitvoeren van de opdracht, dit vormt het bewijs dat je de opdracht gedaan hebt.
+Deze opdracht is individueel. Om de opdracht uit te voeren heb je een werkende Linux-installatie nodig. Er is een installatie-image beschikbaar voor een aangepaste versie van Lubuntu Linux, met daarin de meeste benodigdheden voor dit en volgende vakken. Het staat je vrij deze opdracht in een andere versie van Linux te doen, al kan je er daarbij tegenaan lopen dat dingen bij jou net anders werken. Als je de HU-image wilt gebruiken kun je deze installeren in een virtuele machine (in een later practicum zullen we gebruik maken van VirtualBox hiervoor), als multi-boot naast je bestaande Windows of Mac, of op een oude-maar-nog-werkende laptop - op oplopende volgorde van gemak.
 
 ## Benodigde bestanden
 Gebruik het commando `cd ~/V1EOS-practica/scavenger_hunt` om in de mappen van dit practicum te komen. Van hieruit gebruik je het commando `./generate_clues.py [STUDENTNR]` om de clues te genereren. Je kunt nu met de eerste aanwijzing beginnen.
