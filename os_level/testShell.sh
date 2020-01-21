@@ -91,6 +91,7 @@ else
   echo "[31mseek werkt nog niet!"
   exit -1
 fi
+rm -f seek loop
 
 echo
 echo "[36mAlles lijkt te werken! Commit en push je code naar GitHub, en lever de link in op Canvas!"

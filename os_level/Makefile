@@ -5,7 +5,7 @@ clean:
 
 test: all
 	./testShell.sh ./shell
-	./testTool.sh ./tool
+	./testTool.sh ./tool 42
 
 %: %.cc %.hh
 	g++ -o $@ $<
