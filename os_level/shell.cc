@@ -13,7 +13,7 @@ int main()
     else if (input == "ls") list();        //   op basis van
     else if (input == "src") src();        //   de invoer
     else if (input == "find") find();
-    else if (input == "python") python();
+    else if (input == "seek") seek();
     else if (input == "exit") return 0;
     else if (input == "quit") return 0;
     else if (input == "error") return 1;
@@ -29,8 +29,8 @@ void list() // ToDo: Implementeer volgens specificatie.
 void find() // ToDo: Implementeer volgens specificatie.
 { std::cout << "ToDo: Implementeer hier find()" << std::endl; }
 
-void python() // ToDo: Implementeer volgens specificatie.
-{ std::cout << "ToDo: Implementeer hier python()" << std::endl; }
+void seek() // ToDo: Implementeer volgens specificatie.
+{ std::cout << "ToDo: Implementeer hier seek()" << std::endl; }
 
 void src() // Voorbeeld: Gebruikt SYS_open en SYS_read om de source van de shell (shell.cc) te printen.
 { int fd = syscall(SYS_open, "shell.cc", O_RDONLY, 0755); // Gebruik de SYS_open call om een bestand te openen.
