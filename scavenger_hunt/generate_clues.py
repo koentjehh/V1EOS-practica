@@ -74,9 +74,9 @@ if __name__ == "__main__":
             if (template_index < len(template_data)):
                 if (template_index == 2):
                     file_name.write(template_data[template_index]
-                                    .format(zero_pad(clue_indices[1]),
-                                            zero_pad(clue_indices[0])))
-                if (template_index == 12):
+                                    .format(zero_pad(clue_indices[0]),
+                                            zero_pad(clue_indices[1])))
+                elif (template_index == 12):
                     file_name.write(template_data[template_index]
                                     .format(hashlib.md5("/scavenger_hunt/{}"
                                         .format(secret_number).encode())
