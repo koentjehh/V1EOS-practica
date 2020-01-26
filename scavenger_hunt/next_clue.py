@@ -25,11 +25,11 @@ def check_hint(clue, hint):
     elif (clue == 6):
         return hint == os.getenv("PATH").split(":")[0]
     elif (clue == 7):
-        return hint == popen2("which python").strip()
+        return hint == popen2("which python").strip() or hint == popen2("which python3").strip()
     elif (clue == 8):
         return hashlib.md5(hint.encode()).hexdigest() in ["0512868916a7081afcfb789198de0f37", "865726b2885feef8e8b25b56a2d7c8f8"]
     elif (clue == 9):
-        return hint == popen2("wc -l /usr/share/dict/words").strip()
+        return hint == popen2("wc -l /usr/share/dict/words").strip().split(' ')[0]
     elif (clue == 10):
         return hint == popen2("grep -A 1 tactful /usr/share/dict/words").strip().split('\n')[1]
     elif (clue == 11):
