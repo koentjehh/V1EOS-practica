@@ -27,11 +27,12 @@ def check_hint(clue, hint):
     elif (clue == 7):
         return hint == popen2("which python").strip() or hint == popen2("which python3").strip()
     elif (clue == 8):
-        return hashlib.md5(hint.encode()).hexdigest() in ["0512868916a7081afcfb789198de0f37", "865726b2885feef8e8b25b56a2d7c8f8"]
+        return hashlib.md5(hint.encode()).hexdigest() in ['0512868916a7081afcfb789198de0f37', '865726b2885feef8e8b25b56a2d7c8f8', '4ab7d471b85d867f917bf1a97f4224ec']
+
     elif (clue == 9):
         return hint == popen2("wc -l /usr/share/dict/words").strip().split(' ')[0]
     elif (clue == 10):
-        return hint == popen2("grep -A 1 tactful /usr/share/dict/words").strip().split('\n')[1]
+        return hint == popen2("grep -A 1 tactics /usr/share/dict/words").strip().split('\n')[1]
     elif (clue == 11):
         return hashlib.md5(hint.encode()).hexdigest() in ["d86b1ca862b3c45142b5d029e167b097", "92cf65ca941ffa48f947a438d41f54c6", "48b31a14f2559fa440deba1693cdde46", "5245f994cb6cf5036b7128ed7ccd3d8c", "862fca2ccc1e235b07a29c4814033a94", "1a1dcdc69afb9c0bc91589b51f7a9394"]
     elif (clue == 12):
