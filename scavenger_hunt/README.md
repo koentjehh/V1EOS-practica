@@ -8,7 +8,11 @@ keywords: [EOS]
 Deze opdracht is individueel. Om de opdracht uit te voeren heb je een werkende Linux-installatie nodig. Er is een installatie-image beschikbaar voor een aangepaste versie van Lubuntu Linux, met daarin de meeste benodigdheden voor dit en volgende vakken. Het staat je vrij deze opdracht in een andere versie van Linux te doen, al kan je er daarbij tegenaan lopen dat dingen bij jou net anders werken. Als je de HU-image wilt gebruiken kun je deze installeren in een virtuele machine (in een later practicum zullen we gebruik maken van VirtualBox hiervoor), als multi-boot naast je bestaande Windows of Mac, of op een oude-maar-nog-werkende laptop - op oplopende volgorde van gemak.
 
 ## Benodigde bestanden
-Gebruik het commando `cd ~/V1EOS-practica/scavenger_hunt` om in de mappen van dit practicum te komen. Van hieruit gebruik je het commando `./generate_clues.py [STUDENTNR]` om de clues te genereren. Je kunt nu met de eerste aanwijzing beginnen.
+Gebruik het commando `cd ~/V1EOS-practica/scavenger_hunt` om in de mappen van dit practicum te komen. Van hieruit gebruik je het commando `./generate_clues.py "[HU-EMAIL]"` om de clues te genereren. Bijvoorbeeld:
+
+    ./generate_clues.py "carmen.sandiego@student.hu.nl"
+
+Je kunt nu met de eerste aanwijzing beginnen.
 
 ## Clue 1: The Hunt Begins
 

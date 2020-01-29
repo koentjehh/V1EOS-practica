@@ -45,7 +45,8 @@ if __name__ == "__main__":
 
     if (len(sys.argv) != 4):
         sys.exit("Need a secret number, clue number, and hint")
-    secret_number = int(sys.argv[1])
+    secret_number = int(hashlib.md5(sys.argv[1].encode()).hexdigest(), 16)
+    print(secret_number)
     clue_number = int(sys.argv[2])
     hint = sys.argv[3]
 
