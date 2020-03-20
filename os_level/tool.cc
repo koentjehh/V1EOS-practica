@@ -1,18 +1,15 @@
 #include <iostream>
 #include <string>
 
-std::string translate(std::string line, std::string argument)
-{ std::string result = ""; // implementeer dit
-  return result; }
-
-int main(int argc, char *argv[])
-{ std::string line;
-
-  if(argc != 2)
-  { std::cerr << "Deze functie heeft exact 1 argument nodig" << std::endl;
-    return -1; }
-
-  while(std::getline(std::cin, line))
-  { std::cout << translate(line, argv[1]) << std::endl; } 
-
-  return 0; }
+int main(int argc, char *argv[]){
+  string resultaat = "";
+  
+  for(int i=0; argv.size(); i++){
+    if(argv[i]){ // hoofdletters
+      resultaat += char(int(argv[i]+argc-65)%26 +65);
+    }else{ // kleine letters
+      resultaat += char(int(argv[i]+argc-97)%26 +65);
+    }
+  }
+  return resultaat;
+}
