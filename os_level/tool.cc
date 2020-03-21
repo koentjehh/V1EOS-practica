@@ -18,10 +18,6 @@ std::string translate(std::string line){
 int main(int argc, char *argv[])
 { std::string line;
 
-  if(argc != 2)
-  { std::cerr << "Deze functie heeft exact 1 argument nodig" << std::endl;
-    return -1; }
-
   while(std::getline(std::cin, line))
   { std::cout << translate(line) << std::endl; } 
 
