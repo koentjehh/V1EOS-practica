@@ -3,12 +3,13 @@
 
 std::string translate(std::string line){
   std::string result = line;
+  int sh = 4;
   
   for(int i=0; i < line.size(); i++){
     if(line[i]>= 65 && line[i] <= 90){ // hoofdletters
-      result[i] = char((line[i] + 3) % (26 + line[i]));
+      result[i] = char((line[i]+sh-65)%26 +65);
     }else if(line[i]>97 && line[i] <= 122){ // kleine letters
-      result[i] = char((line[i] + 3) % (26 + line[i]));
+      result[i] = char((line[i]+sh-97)%26 +97);
     }
   }
   return result;
