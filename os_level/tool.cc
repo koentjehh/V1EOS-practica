@@ -3,7 +3,7 @@
 
 std::string translate(std::string line){
   std::string result = line;
-  int sh = 4;
+  int sh = 23;
   
   for(int i=0; i < line.size(); i++){
     if(line[i]>= 65 && line[i] <= 90){ // hoofdletters
