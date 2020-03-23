@@ -1,4 +1,4 @@
-#include <iostream>
+include <iostream>
 #include <string>
 
 std::string translate(std::string line){
